@@ -1,2 +1,2 @@
 # TicTacToe-Website
-> - Visit my website [here](https:///Users/ryleyhaynes/Desktop/VScode/testing/index.html).
+> -  [Click to Play]([https:///Users/ryleyhaynes/Desktop/VScode/testing/index.html](https://ryley-haynes.github.io/TicTacToe-Website/)).
