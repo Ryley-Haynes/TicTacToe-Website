@@ -33,6 +33,10 @@ function initializeBoard() {
 function handleCellClick(row, col) {
     if (board[row][col] === '' && !checkWinner()) {
         board[row][col] = currentPlayer;
+        const cell = document.querySelector(`.cell[data-row="${row}"][data-col="${col}"]`);
+        cell.textContent = currentPlayer; 
+        cell.classList.add(currentPlayer.toLowerCase()); 
+
         updateBoard();
         if (checkWinner()) {
             messageElement.textContent = `${currentPlayer} Wins!`;
@@ -51,9 +55,6 @@ function updateBoard() {
         const row = cell.dataset.row;
         const col = cell.dataset.col;
         cell.textContent = board[row][col];
-        if (board[row][col] !== '') {
-            cell.style.backgroundColor = '#DFF0D8'; // Highlight the filled cells
-        }
     });
 }
 
